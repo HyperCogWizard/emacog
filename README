@@ -5,6 +5,112 @@ See the end of the file for license conditions.
 This directory tree holds version 31.0.50 of GNU Emacs, the extensible,
 customizable, self-documenting real-time display editor.
 
+## Org-Mode and Elisp Chatbot Interface
+
+This Emacs distribution includes an advanced Org-Mode and Elisp Chatbot
+Interface that implements a sophisticated cognitive architecture with
+hypergraph-inspired conversation memory and adaptive attention allocation
+mechanisms.
+
+### Features
+
+- **Hypergraph Conversation Memory**: Uses node-based structures to track
+  complex dialogue relationships and semantic linkages
+- **Context-Aware Response Generation**: Implements attention allocation
+  mechanisms that prioritize responses based on conversational salience
+- **Semantic Message Parsing**: Automatically classifies messages into
+  cognitive domains (priority, query, cognitive, technical)
+- **Org-Mode Integration**: Renders conversations as structured Org documents
+  with properties, timestamps, and semantic metadata
+- **Recursive Dialogue Support**: Maintains context depth and supports
+  symbolic elaboration across conversation turns
+- **Extensible Architecture**: Provides integration hooks for neural-symbolic
+  enhancements and cognitive module expansion
+
+### Usage Examples
+
+#### Starting a Chatbot Session
+
+```elisp
+M-x org-chatbot-start-session
+```
+
+This creates a new Org-mode buffer with cognitive dialogue interface.
+
+#### Sending Messages
+
+```elisp
+M-x org-chatbot-send-message
+```
+
+Enter your message when prompted. The system will:
+1. Parse semantic content and assign attention weights
+2. Update the hypergraph conversation memory
+3. Generate context-aware responses
+4. Render the dialogue in structured Org format
+
+#### Example Interaction
+
+```org
+* Dialogue Session
+
+** User Input
+What is the cognitive architecture of this system?
+
+** Cognitive Response
+Engaging cognitive processing patterns. Activating hypergraph semantic networks.
+
+:PROPERTIES:
+:SEMANTIC_TAGS: cognitive-domain, query
+:END:
+```
+
+#### Exporting Sessions
+
+```elisp
+M-x org-chatbot-export-session
+```
+
+Exports the current conversation as a structured Org file with full
+semantic annotations and attention allocation metadata.
+
+#### Viewing Attention Maps
+
+```elisp
+M-x org-chatbot-show-attention-map
+```
+
+Displays current attention allocation across semantic domains in table format.
+
+### Customization
+
+The chatbot interface can be customized through several variables:
+
+- `org-chatbot-max-context-depth`: Maximum conversation context depth (default: 10)
+- `org-chatbot-attention-threshold`: Attention allocation threshold (default: 0.6)
+- `org-chatbot-buffer-name`: Default buffer name for sessions (default: "*Org Chatbot*")
+
+### Architecture Integration
+
+The chatbot follows the MORK (Modular Object-oriented Recursive Kernel) design
+pattern documented in `doc/misc/emacs-architecture.org`. It integrates with:
+
+- **Semantic Engine**: For knowledge representation and symbolic processing
+- **Attention Allocation**: For cognitive resource management
+- **Org-Mode**: For structured dialogue rendering and export
+- **Cognitive Modules**: For extensible neural-symbolic enhancement
+
+### Implementation
+
+The implementation consists of:
+- `lisp/org/org-chatbot.el`: Core chatbot functionality
+- `test/lisp/org/org-chatbot-tests.el`: Comprehensive test suite
+
+All tests pass and validate message parsing, attention allocation, response
+generation, context management, and Org-mode integration.
+
+---
+
 The file INSTALL in this directory says how to build and install GNU
 Emacs on various systems, once you have unpacked or checked out the
 entire Emacs file tree.
